@@ -1,10 +1,11 @@
-package utils;
+package support;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class DriverManager {
 
@@ -17,10 +18,13 @@ public class DriverManager {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--start-maximized");
                 driver = new ChromeDriver(options);
+
                 break;
             case FIREFOX:
                 WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+                FirefoxOptions optionsFirefox = new FirefoxOptions();
+                optionsFirefox.addArguments("--start-maximized");
+                driver = new FirefoxDriver(optionsFirefox);
                 break;
             case CHROME_HEADLESS:
                 WebDriverManager.chromedriver().setup();

@@ -29,7 +29,7 @@ public class CheckoutTasks extends TasksAbstraction {
     }
 
     public void validadeUserDataLogin(){
-        pages.accessOrderPage();
+        homePage.getCartCollapse().click();
         orderPage.getProceedToCheckoutButton().click();
         checkoutValidations.validateNames();
         checkoutValidations.validateAddresses();

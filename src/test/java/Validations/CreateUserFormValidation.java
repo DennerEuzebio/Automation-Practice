@@ -2,8 +2,8 @@ package Validations;
 
 import PageObjects.CreateUserFormPage;
 import org.openqa.selenium.WebDriver;
-import utils.FileOperations;
-import utils.Messages;
+import support.FileOperations;
+import support.Messages;
 
 public class CreateUserFormValidation extends ValidationsAbstraction {
 

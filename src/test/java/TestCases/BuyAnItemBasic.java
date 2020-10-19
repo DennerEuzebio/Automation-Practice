@@ -3,12 +3,12 @@ package TestCases;
 import Tasks.AddToCartTasks;
 import Tasks.AuthenticationTasks;
 import Tasks.CheckoutTasks;
-import TestBases.TestBase;
+import support.TestBase;
 import com.aventstack.extentreports.Status;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
-import utils.Report;
+import support.Report;
 
 import java.io.IOException;
 

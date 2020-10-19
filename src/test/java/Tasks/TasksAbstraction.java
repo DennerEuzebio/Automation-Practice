@@ -5,7 +5,6 @@ import Validations.CheckoutValidations;
 import Validations.CreateUserFormValidation;
 import Validations.OrderValidation;
 import org.openqa.selenium.WebDriver;
-import utils.AccessPages;
 
 public class TasksAbstraction {
 
@@ -14,7 +13,6 @@ public class TasksAbstraction {
     protected ProductPage productPage;
     protected ModalsPage modalsPage;
     protected OrderPage orderPage;
-    protected AccessPages pages;
     protected AuthenticationPage authenticationPage;
     protected CreateUserFormPage createUserFormPage;
     protected CreateUserFormValidation createUserFormValidation;
@@ -31,7 +29,6 @@ public class TasksAbstraction {
         productPage = new ProductPage(this.driver);
         modalsPage = new ModalsPage(this.driver);
         orderPage = new OrderPage(this.driver);
-        pages = new AccessPages(driver);
         authenticationPage = new AuthenticationPage(driver);
         createUserFormPage = new CreateUserFormPage(driver);
         createUserFormValidation = new CreateUserFormValidation(driver);

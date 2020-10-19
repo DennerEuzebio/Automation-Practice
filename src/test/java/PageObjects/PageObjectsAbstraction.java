@@ -14,12 +14,15 @@ public class  PageObjectsAbstraction{
 
     public PageObjectsAbstraction(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, 35);
+        this.wait = new WebDriverWait(driver, 10);
     }
 
     private void wait(By by) {
         wait.until(ExpectedConditions.presenceOfElementLocated(by));
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    }
+    public WebElement waitLoad(WebElement element){
+        return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
     protected WebElement byXpath(String xpath) {

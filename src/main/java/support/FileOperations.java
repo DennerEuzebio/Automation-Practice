@@ -1,7 +1,6 @@
-package utils;
+package support;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Properties;
 
 public class FileOperations {

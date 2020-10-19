@@ -13,6 +13,7 @@ public class ProductPage extends PageObjectsAbstraction {
         return byId("add_to_cart");
     }
 
+
     public WebElement getProductPrice(){
         return byId("our_price_display");
     }

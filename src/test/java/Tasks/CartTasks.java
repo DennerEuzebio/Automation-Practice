@@ -10,7 +10,7 @@ public class CartTasks extends TasksAbstraction{
     }
 
     public void validateCart(int howMuchItens){
-        pages.accessOrderPage();
+        homePage.getCartCollapse().click();
         for (int i = 1; i <= howMuchItens; i++) {
             System.out.println(i);
             orderValidation.validateUnitPrice(i);
@@ -22,7 +22,7 @@ public class CartTasks extends TasksAbstraction{
     }
 
     public void validateCartSHOULDFAIL(int howMuchItens){
-        pages.accessOrderPage();
+        homePage.getCartCollapse().click();
         for (int i = 1; i <= howMuchItens; i++) {
             System.out.println(i);
             orderValidation.validateUnitPrice(i);

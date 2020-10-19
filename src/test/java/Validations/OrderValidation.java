@@ -2,8 +2,8 @@ package Validations;
 
 import PageObjects.OrderPage;
 import org.openqa.selenium.WebDriver;
-import utils.FileOperations;
-import utils.Messages;
+import support.FileOperations;
+import support.Messages;
 import org.junit.jupiter.api.Assertions;
 
 public class OrderValidation extends ValidationsAbstraction {
@@ -70,6 +70,7 @@ public class OrderValidation extends ValidationsAbstraction {
             subTotal += Double.parseDouble(FileOperations.getProperties("ProductsData")
                     .getProperty("product."+i+".total"));
         }
+
 //      This line create the fail
         subTotal += 3;
 

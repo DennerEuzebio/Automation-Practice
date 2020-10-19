@@ -1,4 +1,4 @@
-package utils;
+package support;
 
 import com.assertthat.selenium_shutterbug.core.PageSnapshot;
 import com.assertthat.selenium_shutterbug.core.Shutterbug;
@@ -106,6 +106,7 @@ public class Report {
     private static boolean existInstance() {
         return test.get() == null;
     }
+
     public static void close() {
         if (existInstance()) {
             return;

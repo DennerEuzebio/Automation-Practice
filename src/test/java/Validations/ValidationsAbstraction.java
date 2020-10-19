@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utils.Messages;
-import utils.Report;
+import support.Messages;
+import support.Report;
 
 public class ValidationsAbstraction extends Messages {
 

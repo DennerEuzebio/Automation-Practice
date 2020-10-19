@@ -4,12 +4,12 @@ import Tasks.AddToCartTasks;
 import Tasks.AuthenticationTasks;
 import Tasks.CartTasks;
 import Tasks.CheckoutTasks;
-import TestBases.TestBase;
+import support.TestBase;
 import com.aventstack.extentreports.Status;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
-import utils.Report;
+import support.Report;
 
 import java.io.IOException;
 
@@ -48,7 +48,7 @@ public class BuyMultiplesItens extends TestBase {
         try {
             Report.createTest("Fail buying multiples itens");
 
-            int howMuchItensToAddToCart = 3;
+            int howMuchItensToAddToCart = 2;
 
             addToCartTasks.addProductsToCart(howMuchItensToAddToCart);
             cartTasks.validateCartSHOULDFAIL(howMuchItensToAddToCart);

@@ -2,9 +2,8 @@ package Validations;
 
 import PageObjects.AddressPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-import utils.FileOperations;
-import utils.Messages;
+import support.FileOperations;
+import support.Messages;
 
 public class CheckoutValidations extends ValidationsAbstraction {
 

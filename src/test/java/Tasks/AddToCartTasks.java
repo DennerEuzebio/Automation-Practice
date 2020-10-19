@@ -1,29 +1,35 @@
 package Tasks;
 
+import PageObjects.PageObjectsAbstraction;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import utils.FileOperations;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import support.FileOperations;
 
 import java.io.IOException;
 
 public class AddToCartTasks extends TasksAbstraction {
 
+    PageObjectsAbstraction pageObjectsAbstraction;
+
     public AddToCartTasks(WebDriver driver) {
         super(driver);
+        pageObjectsAbstraction = new PageObjectsAbstraction(driver);
     }
 
     public void addProductsToCart(int howMuch) throws IOException {
         for (int i = 1; i < howMuch+1; i++) {
-            pages.accessHomePage();
             homePage.getProduct(i).click();
             saveProductInfo(i);
             productPage.getAddToCartButton().click();
-            modalsPage.getProceedToCheckouButton();
+            modalsPage.getContinueShoppingButton().click();
+            pageObjectsAbstraction.waitLoad(homePage.getHomeLogo());
+            homePage.getHomeLogo().click();
         }
     }
 
     public void proceedToCheckout() {
-        pages.accessOrderPage();
+        homePage.getCartCollapse().click();
         orderPage.getProceedToCheckoutButton().click();
     }
 

@@ -1,13 +1,9 @@
 package Tasks;
 
-import PageObjects.AuthenticationPage;
-import PageObjects.CreateUserFormPage;
-import Validations.CreateUserFormValidation;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utils.AccessPages;
-import utils.FakersGenerators;
-import utils.FileOperations;
+import support.FakersGenerators;
+import support.FileOperations;
 
 import java.io.IOException;
 import java.util.Random;
@@ -20,7 +16,7 @@ public class AuthenticationTasks extends TasksAbstraction {
     }
 
     public void login(){
-        pages.accessAuthenticationPage();
+        homePage.getSinginButton().click();
         sendKeys(authenticationPage.getEmailTextBox(),"email");
         sendKeys(authenticationPage.getPasswordTextBox(),"password");
         authenticationPage.getSignInButton().click();

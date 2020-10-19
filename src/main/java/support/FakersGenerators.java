@@ -1,7 +1,6 @@
-package utils;
+package support;
 
 import com.github.javafaker.Faker;
-import org.openqa.selenium.WebDriver;
 
 import java.util.Locale;
 
