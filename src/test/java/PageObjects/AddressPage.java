@@ -21,18 +21,6 @@ public class AddressPage extends PageObjectsAbstraction {
         return byXpath("//*[@id=\"address_delivery\"]/li[4]");
     }
 
-    public WebElement getCityStateZipLabel(){
-        return byXpath("//*[@id=\"address_delivery\"]/li[5]");
-    }
-
-    public WebElement getCountryLabel(){
-        return byXpath("//*[@id=\"address_delivery\"]/li[6]");
-    }
-
-    public WebElement getPhoneLabel(){
-        return byXpath("//*[@id=\"address_delivery\"]/li[7]");
-    }
-
     public WebElement getPhoneMobileLabel(){
         return byXpath("//*[@id=\"address_delivery\"]/li[8]");
     }

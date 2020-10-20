@@ -10,14 +10,6 @@ public class CreateUserFormPage extends PageObjectsAbstraction {
         super(driver);
     }
 
-    public WebElement getGenderOneRadioButton(){
-        return byId("uniform-id_gender1");
-    }
-
-    public WebElement getGenderTwoRadioButton(){
-        return byId("uniform-id_gender2");
-    }
-
     public WebElement getFirstNameTextBox(){
         return byId("customer_firstname");
     }
@@ -84,10 +76,6 @@ public class CreateUserFormPage extends PageObjectsAbstraction {
 
     public WebElement getPhoneMobileTextBox(){
         return byId("phone_mobile");
-    }
-
-    public WebElement getAddressAliasTextBox(){
-        return byId("alias");
     }
 
     public WebElement getRegisterButton(){

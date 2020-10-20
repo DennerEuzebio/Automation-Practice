@@ -44,8 +44,6 @@ public class FakersGenerators {
         return faker.address().city();
     }
 
-
-
     public static String getNumCellPhone() {
         return faker.phoneNumber().cellPhone();
     }

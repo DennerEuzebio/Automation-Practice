@@ -21,11 +21,4 @@ public class ModalsPage extends PageObjectsAbstraction {
         return byXpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/span");
     }
 
-
-
-
-    public WebElement getAddToCartButton(){
-        return byId("add_to_cart");
-    }
-
 }

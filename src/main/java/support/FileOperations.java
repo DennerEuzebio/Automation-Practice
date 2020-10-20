@@ -5,10 +5,6 @@ import java.util.Properties;
 
 public class FileOperations {
 
-    private static final String DIR_PATH_CSV =
-            System.getProperty("user.dir") + File.separator + "src" + File.separator
-                    + "test" + File.separator + "resources" + File.separator + "Csv" + File.separator;
-
     private static final String DIR_PATH_PROPERTIES =
             System.getProperty("user.dir") + File.separator + "src" + File.separator
                     + "main" + File.separator + "resources" + File.separator + "Properties" + File.separator;

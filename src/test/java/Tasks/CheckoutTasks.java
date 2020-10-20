@@ -41,7 +41,6 @@ public class CheckoutTasks extends TasksAbstraction {
         addressPage.getProceedToCheckoutButton().click();
         shippingPageObjects.getTermsCheckBox().click();
         shippingPageObjects.getProceedToCheckoutButton().click();
-//        validação dos valores
         paymentPageObjects.getBankWirePaymentButton().click();
         paymentConfirmationPageObjects.getProceedToCheckoutButton().click();
     }

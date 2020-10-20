@@ -35,20 +35,4 @@ public class OrderPage extends PageObjectsAbstraction {
         return byId("total_product");
     }
 
-    public WebElement getShippingPriceLabel(){
-        return byId("total_shipping");
-    }
-
-    public WebElement getTotalPriceWithoutTaxLabel(){
-        return byId("total_price_without_tax");
-    }
-
-    public WebElement getTaxPriceLabel(){
-        return byId("total_tax");
-    }
-
-    public WebElement getTotalPriceLabel(){
-        return byId("total_price");
-    }
-
 }

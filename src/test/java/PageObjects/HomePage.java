@@ -15,17 +15,9 @@ public class HomePage extends PageObjectsAbstraction {
         return byXpath("//*[@id='homefeatured']/li["+itemIndex+"]/div/div[2]/h5/a");
     }
 
-//    public WebElement getHomeLogo(){
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("header_logo")));
-//        return byId("header_logo");
-//    }
-
     public WebElement getHomeLogo(){
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("header_logo")));
         return byXpath("//*[@id=\"header_logo\"]/a/img");
     }
-
-
 
     public WebElement getSinginButton(){
         return byXpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]");

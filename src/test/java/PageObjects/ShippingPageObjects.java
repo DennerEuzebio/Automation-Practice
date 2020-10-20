@@ -9,10 +9,6 @@ public class ShippingPageObjects extends PageObjectsAbstraction {
         super(driver);
     }
 
-    public WebElement getPriceLabel(){
-        return byXpath("//*[@id=\"form\"]/div/div[2]/div[1]/div/div/table/tbody/tr/td[4]/div");
-    }
-
     public WebElement getTermsCheckBox(){
         return byId("cgv");
     }

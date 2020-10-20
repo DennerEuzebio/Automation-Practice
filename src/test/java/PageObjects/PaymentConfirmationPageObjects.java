@@ -9,10 +9,6 @@ public class PaymentConfirmationPageObjects extends PageObjectsAbstraction {
         super(driver);
     }
 
-    public WebElement getAmountPriceLabel(){
-        return byId("amount");
-    }
-
     public WebElement getProceedToCheckoutButton(){
         return byXpath("//*[@id=\"cart_navigation\"]/button");
     }
